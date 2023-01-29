@@ -1,0 +1,224 @@
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #2E2F42
+}
+/* ---------------------------------heder-------------------------- */
+.heder {    
+    background: #FFFFFF;
+}
+.heder-navigation {
+
+}
+.logo{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+.heder-logo {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+.heder-logo:hover,
+.heder-logo:focus{
+    color: #4D5AE5;
+}
+.heder-list {
+
+}
+.heder-item {
+
+}
+.heder-link {   
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.heder-link:hover,
+.heder-link:focus{
+    color: #4D5AE5;
+}
+    
+
+.heder-tel{
+    color: #434455;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.heder-email{
+    color: #434455;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/* ----------Hero image----------- */
+
+.hero {
+    background: #2E2F42;
+    width: 1440px;
+    height: 600px;
+    left: 1px;
+    top: 132px;
+}
+.hero-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07em;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.hero-button {
+    color: #FFFFFF;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: inherit;
+    cursor: pointer;
+    background: #4D5AE5;  
+}
+.features {
+}
+.features-list {
+}
+.features-item {
+}
+.features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.features-text {        
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* ----------------------doing------------------ */
+.doing {
+}
+.doing-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11em; 
+    letter-spacing: 0.02em;        
+    color: #2E2F42;
+}
+.doing-list {
+}
+.doing-item {
+}
+/* -----------------team-------------------- */
+.team-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11em;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.team-list {
+}
+.team-item {
+}
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.team-text {        
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* ------------footer--------------- */
+.footer {
+    width: 1440px;
+    height: 310px;
+    left: 0px;
+    top: 2280px;
+    background: #2E2F42;
+}
+.footer-logo {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+.footer-logo:hover,
+.footer-logo:focus{
+    color: #4D5AE5;
+}
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* ----------------------PORTFOLIO ---------------------*/
+
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;     
+    letter-spacing: 0.02em;   
+    color: #2E2F42;
+}
+.text{    
+    font-size: 16px;
+    line-height: 24px;        
+    letter-spacing: 0.02em; 
+    color: #434455;
+}
+.filters-button{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    cursor: pointer;
+}
