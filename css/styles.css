@@ -1,3 +1,14 @@
+:root{
+    --footer-background:  #2E2F42;
+    --hero-background:  #2E2F42;
+    --logo-color: #4D5AE5;
+    --heder-logo-color: #2E2F42;
+    --footer-logo-color: #F4F4FD;
+    --body-background: #FFFFFF;
+    --team-title-background: #FFFFFF;
+}
+
+
 .list {
     list-style: none;
 }
@@ -5,38 +16,39 @@
     text-decoration: none;
 }
 body {
-    font-family: 'Roboto Slab', serif;
-    color: #2E2F42
+    font-family: 'Roboto', sans-serif;
+    color: #2E2F42;
+    background: var(--body-background, #FFFFFF);
 }
 /* ---------------------------------heder-------------------------- */
 .heder {    
-    background: #FFFFFF;
+    
 }
 .heder-navigation {
 
 }
+
 .logo{
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(24 / 18);
+    line-height: calc(21 / 18);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--logo-color);
+    text-decoration: none;
 }
 .heder-logo {
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(24 / 18);
-    display: flex;
-    align-items: center;
+    line-height: calc(21 / 18); 
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    text-decoration: none;
+    color: var(--heder-logo-color)   
 }
-.heder-logo:hover,
-.heder-logo:focus{
-    color: #4D5AE5;
-}
+
 .heder-list {
 
 }
@@ -47,7 +59,7 @@ body {
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 .heder-link:hover,
 .heder-link:focus{
@@ -56,34 +68,33 @@ body {
     
 
 .heder-tel{
-    color: #434455;
-    letter-spacing: 0.02em;
-    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: #404BBF;
 }
 .heder-email{
-    color: #434455;
-    letter-spacing: 0.02em;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: #404BBF;
 }
 
 /* ----------Hero image----------- */
 
 .hero {
-    background: #2E2F42;
-    width: 1440px;
-    height: 600px;
-    left: 1px;
-    top: 132px;
+    background: var(--hero-background,#2E2F42);
+    
 }
-.hero-title {
-    font-family: 'Roboto Slab', serif;
+.hero-title {    
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07em;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
@@ -92,38 +103,48 @@ body {
     letter-spacing: 0.04em;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-family: inherit;
     cursor: pointer;
     background: #4D5AE5;  
 }
+.hero-button:hover,
+.hero-button:focus{
+    color: #FFFFFF;
+}
+/* --------------Section 2---------------- */
 .features {
 }
 .features-list {
 }
 .features-item {
+    background: #FFFFFF;
 }
 .features-subtitle {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    background: #FFFFFF;
+    
+}
+
+.features-text {        
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.features-text {        
-    font-size: 16px;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
+
+
 /* ----------------------doing------------------ */
 .doing {
 }
 .doing-title {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11em; 
+    line-height: 1.11; 
     letter-spacing: 0.02em;        
     color: #2E2F42;
 }
@@ -132,13 +153,16 @@ body {
 .doing-item {
 }
 /* -----------------team-------------------- */
-.team-title {
-    font-family: 'Roboto Slab', serif;
+.team{
+    background: #F4F4FD;
+}
+
+.team-title {    
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11em;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    line-height: 1.11;
+    letter-spacing: 0.02em; 
+    background: var(--team-title-background);
 }
 .team-list {
 }
@@ -147,42 +171,36 @@ body {
 .team-subtitle {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
 .team-text {        
     font-size: 16px;
-    line-height: 24px;
+    line-height:  calc(24 / 16);
     letter-spacing: 0.02em;
     color: #434455;
 }
 /* ------------footer--------------- */
-.footer {
-    width: 1440px;
-    height: 310px;
-    left: 0px;
-    top: 2280px;
-    background: #2E2F42;
+.footer {    
+    background: var(--footer-background, #2E2F42);
 }
+
 .footer-logo {
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(24 / 18);
+    line-height: calc(21/ 18);
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
+    text-decoration: none;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color: var(--footer-logo-color, #F4F4FD);
 }
-.footer-logo:hover,
-.footer-logo:focus{
-    color: #4D5AE5;
-}
-.footer-text {
-    font-weight: 400;
+
+.footer-text {   
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
@@ -200,25 +218,36 @@ body {
 }
 /* ----------------------PORTFOLIO ---------------------*/
 
+.subtitle-link{
+    text-decoration-line: none; 
+    color: #2E2F42;
+}
 .subtitle{
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2em;     
-    letter-spacing: 0.02em;   
+    line-height: 1.2;     
+    letter-spacing: 0.02em;     
     color: #2E2F42;
 }
 .text{    
     font-size: 16px;
-    line-height: 24px;        
-    letter-spacing: 0.02em; 
+    line-height: 1.5;        
+    letter-spacing: 0.02em;
+    text-decoration: none;   
     color: #434455;
 }
 .filters-button{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height:  calc(24 / 16);
     letter-spacing: 0.04em;
+    text-decoration: none;
     color: #4D5AE5;
     cursor: pointer;
+}
+.filters-button:hover,
+.filters-button:focus{
+    color: #FFFFFF;
+    background: #404BBF;
 }
