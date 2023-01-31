@@ -4,8 +4,7 @@
     --logo-color: #4D5AE5;
     --heder-logo-color: #2E2F42;
     --footer-logo-color: #F4F4FD;
-    --body-background: #FFFFFF;
-    --team-title-background: #FFFFFF;
+    --body-background: #FFFFFF;    
     --heder-link-color: #2E2F42;
     --heder-tel-link: #434455;
     --heder-link-accent-color: #4D5AE5;
@@ -18,11 +17,13 @@
     --team-background: #F4F4FD;
     --team-subtitle: #2E2F42;
     --team-text-color:  #434455;
+    --team-title-color: #2E2F42;
     --footer-text-color: #E7E9FC;
     --subtitle-link: #2E2F42;
     --text: #434455;
     --filters-button-color: #4D5AE5;
     --filters-button-background: #F4F4FD;
+    
 }
  
 .list {
@@ -81,6 +82,7 @@ body {
 .heder-tel{
     font-family: 'Roboto',sans-serif;
     font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
     letter-spacing: 0.02em;
@@ -110,6 +112,8 @@ body {
     
 }
 .hero-button {
+    font-family: 'Roboto';
+    font-style: normal;
     color: var(--hero-button, #FFFFFF);
     letter-spacing: 0.04em;
     font-weight: 500;
@@ -168,7 +172,7 @@ body {
 }
 /* -----------------team-------------------- */
 .team{
-    background: var(--team-background);
+    background: var(--team-background,  #F4F4FD);    
 }
 
 .team-title {    
@@ -176,7 +180,7 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em; 
-    background: var(--team-title-background);
+    color:var(--team-title-color);
 }
 .team-list {
 }
@@ -203,9 +207,7 @@ body {
 .footer-logo {
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(21/ 18);
-    display: flex;
-    align-items: center;
+    line-height: calc(21/ 18);    
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
